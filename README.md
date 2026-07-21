@@ -4,6 +4,14 @@ NewsApp is an Android application for browsing news articles, saving favorite ar
 
 The application uses a remote News API together with local Room storage and follows an MVVM-based architecture.
 
+## Screenshots
+
+<p align="center">
+  <img src="/Users/mikhailereshko/AndroidStudioProjects/NewsApp/screenshots/news_feed.png" width="250" alt="News Feed"/>
+  <img src="/Users/mikhailereshko/AndroidStudioProjects/NewsApp/screenshots/article_details.png" width="250" alt="Article Details"/>
+  <img src="/Users/mikhailereshko/AndroidStudioProjects/NewsApp/screenshots/favorites.png" width="250" alt="Favorites"/>
+</p>
+
 ## Features
 
 - Loading news from a remote API
