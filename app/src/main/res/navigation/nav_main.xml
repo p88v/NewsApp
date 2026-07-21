@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/feedNewsFragment">
+
+    <fragment
+        android:id="@+id/feedNewsFragment"
+        android:name="ru.app.newsapp.fragment.FeedNewsFragment"
+        android:label="fragment_feed_news"
+        tools:layout="@layout/fragment_feed_news" >
+        <action
+            android:id="@+id/action_feedNewsFragment_to_oneNewsFragment"
+            app:destination="@id/oneNewsFragment" />
+        <action
+            android:id="@+id/action_feedNewsFragment_to_favoriteNewsFragment"
+            app:destination="@id/favoriteNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneNewsFragment"
+        android:name="ru.app.newsapp.fragment.OneNewsFragment"
+        android:label="fragment_one_news"
+        tools:layout="@layout/fragment_one_news" >
+        <action
+            android:id="@+id/action_oneNewsFragment_to_feedNewsFragment"
+            app:destination="@id/feedNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteNewsFragment"
+        android:name="ru.app.newsapp.fragment.FavoriteNewsFragment"
+        android:label="fragment_favorite_news"
+        tools:layout="@layout/fragment_favorite_news" >
+        <action
+            android:id="@+id/action_favoriteNewsFragment_to_feedNewsFragment"
+            app:destination="@id/feedNewsFragment" />
+        <action
+            android:id="@+id/action_favoriteNewsFragment_to_oneNewsFragment"
+            app:destination="@id/oneNewsFragment" />
+    </fragment>
+</navigation>
