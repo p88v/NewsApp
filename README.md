@@ -1,15 +1,17 @@
 # NewsApp
 
-NewsApp is an Android application for browsing news articles, saving favorite articles, and opening the original news source.
+NewsApp is an Android application for browsing news articles, saving favorite articles, and opening
+the original news source.
 
-The application uses a remote News API together with local Room storage and follows an MVVM-based architecture.
+The application uses a remote News API together with local Room storage and follows an MVVM-based
+architecture.
 
 ## Screenshots
 
 <p align="center">
-  <img src="/Users/mikhailereshko/AndroidStudioProjects/NewsApp/screenshots/news_feed.png" width="250" alt="News Feed"/>
-  <img src="/Users/mikhailereshko/AndroidStudioProjects/NewsApp/screenshots/article_details.png" width="250" alt="Article Details"/>
-  <img src="/Users/mikhailereshko/AndroidStudioProjects/NewsApp/screenshots/favorites.png" width="250" alt="Favorites"/>
+<img src="screenshots/news_feed.png" width="250" alt="News Feed"/>
+<img src="screenshots/article_details.png" width="250" alt="Article Details"/>
+<img src="screenshots/favorites.png" width="250" alt="Favorites"/>
 </p>
 
 ## Features
@@ -83,7 +85,8 @@ ViewModel
 UI
 ```
 
-Room acts as the local source of data, while Retrofit is responsible for retrieving fresh news from the remote API.
+Room acts as the local source of data, while Retrofit is responsible for retrieving fresh news from
+the remote API.
 
 ## Data Flow
 
@@ -113,7 +116,8 @@ Fragment
 RecyclerView
 ```
 
-Changes in the Room database are observed through `Flow`, allowing the UI to react automatically when the stored data changes.
+Changes in the Room database are observed through `Flow`, allowing the UI to react automatically
+when the stored data changes.
 
 ## Favorites
 
